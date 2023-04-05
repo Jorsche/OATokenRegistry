@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "./",
+    "target": "es2020",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "resolveJsonModule": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "paths": {
+      "~/*": ["./src/*"],
+      "@Mocks": ["./src/mocks/index"]
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist", "build"]
+}

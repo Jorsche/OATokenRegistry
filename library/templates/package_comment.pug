@@ -1,0 +1,10 @@
+p Dear User,
+p Package Participants #{orgName} has added/updated comment.
+include includes/package_basic_detail.pug
+div
+  p
+    b Message
+    br
+    i #{eventData.data.message}
+include includes/pitstop_login.pug
+include includes/footer.pug

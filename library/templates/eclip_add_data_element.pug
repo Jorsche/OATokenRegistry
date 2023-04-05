@@ -1,0 +1,19 @@
+p Dear User,
+if dataElementNames.length == 1
+    p The package owner has uploaded a New Data Element.
+else
+    p The package owner has uploaded #{dataElementNames.length} New Data Elements in the package.
+include includes/package_basic_detail.pug
+div
+  p
+    b Data Element Name
+    br
+    if dataElementNames.length == 1
+      | #{dataElementNames[0]}
+    else
+      ol
+        each val in dataElementNames
+          li #{val}
+
+include includes/pitstop_login.pug
+include includes/footer.pug
